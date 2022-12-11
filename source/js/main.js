@@ -1,10 +1,12 @@
-import {initializeMenu} from './modules/menu.js';
+import {initPopup} from './modules/popup.js';
+import {initTabs} from './modules/tabs.js';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-  initializeMenu();
-  
+  initPopup();
+
   window.addEventListener('load', () => {
+    initTabs('about');
   });
 });

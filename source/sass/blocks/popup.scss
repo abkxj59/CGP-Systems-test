@@ -1,0 +1,145 @@
+.popup {
+  background-color: $color-black-pearl;
+  color: $color-basic-white;
+  border-radius: 4px;
+  position: absolute;
+  width: 654px;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%);
+  overflow: scroll;
+  display: none;
+  transition: $trans-default;
+  overflow: visible;
+}
+
+.popup--opened {
+  display: block;
+}
+
+.popup__overlay {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 120%;
+  background-color: rgba($color: $color-black-pearl, $alpha: 0.8);
+  z-index: -1;
+}
+
+.popup--nojs {
+  position: static;
+  margin: 20px auto;
+  transform: none;
+}
+
+.popup__card {
+  background-color: $color-basic-grey;
+}
+
+.popup__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup__tabs {
+  display: flex;
+  list-style: none;
+  padding: 7px 4px 0;
+  margin: 0;
+}
+
+.popup__tab {
+  display: flex;
+  padding: 5px;
+  margin-right: 8px;
+  position: relative;
+  transition: $trans-default;
+  cursor: default;
+
+  @include hover-focus {
+    background-color: $color-basic-grey;
+    opacity: 0.8;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: -3px;
+    width: 1px;
+    height: 60%;
+    background-color: $color-light-grey;
+  }
+
+  &:first-child {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.popup__tab--active {
+  background-color: $color-basic-grey;
+  border: 1px solid $color-light-grey;
+  border-bottom: 1px solid $color-basic-grey;
+  border-radius: 4px 4px 0 0;
+
+  &::after {
+    display: none;
+  }
+}
+
+.popup__tab--active + .popup__tab::after {
+  display: none;
+}
+
+.popup__tab-text {
+  margin: 0;
+}
+
+.popup__tab-close {
+  padding: 1px;
+  border: none;
+  background-color: $color-transparent;
+  margin-right: 2px;
+  margin-left: 8px;
+  color: $color-special-grey;
+  transition: $trans-default;
+  cursor: pointer;
+
+  @include hover-focus {
+    color: $color-basic-white;
+  }
+}
+
+.popup__window-nav {
+  display: flex;
+  padding: 0 10px;
+  align-self: center;
+
+  button {
+    display: flex;
+    align-items: flex-end;
+    border: none;
+    padding: 2px;
+    height: 12px;
+    margin-left: 6px;
+    background-color: $color-transparent;
+    color: $color-special-grey;
+    cursor: pointer;
+    transition: $trans-default;
+
+    @include hover-focus {
+      color: $color-basic-white;
+    }
+  }
+}
+
+.popup__card {
+  border: 1px solid $color-light-grey;
+  margin-top: -1px;
+  padding: 12px 15px 10px;
+  padding-right: 11px;
+}

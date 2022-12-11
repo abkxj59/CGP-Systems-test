@@ -10,26 +10,27 @@ $color-transparent: rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-basic-grey: #c8c8c8;
-$color-dark-grey: #6e6e6e;
-$color-light-grey: #f1f1f1;
-$color-error: #d92c2c;
-$color-success: #007e06;
-$color-blue: #106da1;
-$color-brown: #ae6d0c;
-$color-secondary-black: #444444;
+$color-black-pearl: #181a1d;
+$color-basic-white: #c4c4c4;
+$color-basic-grey: #222429;
+$color-light-grey: #323438;
+$color-special-grey: #737476;
+$color-green: #14cE8b;
+$color-red: #f6544c;
+$color-cyan: #15e3b5;
+$color-brown: #bb9e67;
 
 // Typography
 // ---------------------------------
 
 // переменная используемая в html для подключения скейлинга
-$fz-default:                        16px;
+$fz-default:                        12px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "arial", sans-serif;
 
-$ff-helvetica:                    "Helvetica", "arial", sans-serif;
+$ff-open-sans:                    "Open Sans", "Arial", sans-serif;
 
 // Typography
 // ---------------------------------

@@ -1,0 +1,43 @@
+.price {
+  display: flex;
+  border: 1px solid $color-light-grey;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 4px 7px 2px;
+  align-items: center;
+}
+
+.price__value {
+  font-size: 14px;
+}
+
+.price__currency {
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.price__growth {
+  margin-left: 19px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: -11px;
+    background-color: $color-light-grey;
+  }
+  svg {
+    display: inline-block;
+  }
+
+  &--stonks {
+    color: $color-green;
+  }
+  &--not-stonks {
+    color: $color-red;
+  }
+}
