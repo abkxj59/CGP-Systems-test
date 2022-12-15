@@ -24,8 +24,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
+        test: '/node_modules/chart.js/dist/chart.js',
+        // exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
           presets: ['@babel/preset-env'],

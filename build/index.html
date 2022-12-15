@@ -68,239 +68,306 @@
       </div>
     </header>
 
-    <section class="popup__card card">
-      <h3 class="card__title visually-hidden">Apple Inc.</h3>
-      <div class="card__header">
-        <div class="card__search search">
-          <input type="search" class="search__input" placeholder="Search instrument...">
-          <button type="button" class="search__button">
-            <svg class="search__icon" width="12" height="12">
-              <use xlink:href="img/sprite.svg#icon-search"></use>
-            </svg>
-          </button>
-          <button type="button" class="search__close" aria-label="Close">
-            <svg width="6" height="6" aria-label>
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="card__price price">
-          <div class="price__value">
-            <span class="price__currency">USD</span>
-            120.18
+    <section class="popup__content">
+      <div class="popup__card popup__item popup__item--active card">
+        <h3 class="card__title visually-hidden">Apple Inc.</h3>
+        <div class="card__header">
+          <div class="card__search search">
+            <input type="search" class="search__input" placeholder="Search instrument...">
+            <button type="button" class="search__button">
+              <svg class="search__icon" width="12" height="12">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+            <button type="button" class="search__close" aria-label="Close">
+              <svg width="6" height="6" aria-label>
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
           </div>
-          <div class="price__growth price__growth--stonks">
-            <svg width="5" height="10">
-              <use xlink:href="img/sprite.svg#icon-arrow"></use>
-            </svg>
-            3.29%
+          <div class="card__price price">
+            <div class="price__value">
+              <span class="price__currency">USD</span>
+              120.18
+            </div>
+            <div class="price__growth price__growth--stonks">
+              <svg width="5" height="10">
+                <use xlink:href="img/sprite.svg#icon-arrow"></use>
+              </svg>
+              3.29%
+            </div>
           </div>
         </div>
-      </div>
-      <dl class="card__briefly briefly">
-        <div class="briefly__item">
-          <dt class="briefly__title">Day Range</dt>
-          <dd class="briefly__content briefly__content--range briefly__content--daily">227.13 &dash; 233.37</dd>
-        </div>
-        <div class="briefly__item">
-          <dt class="briefly__title">52 Week Range</dt>
-          <dd class="briefly__content briefly__content--range briefly__content--yearly">127.13 &dash; 233.37</dd>
-        </div>
-        <div class="briefly__item">
-          <dt class="briefly__title">Market Cap</dt>
-          <dd class="briefly__content">2.04T USD</dd>
-        </div>
-        <div class="briefly__item">
-          <dt class="briefly__title">Beta</dt>
-          <dd class="briefly__content">1.25</dd>
-        </div>
-      </dl>
+        <dl class="card__briefly briefly">
+          <div class="briefly__item">
+            <dt class="briefly__title">Day Range</dt>
+            <dd class="briefly__content briefly__content--range briefly__content--daily">227.13 &dash; 233.37</dd>
+          </div>
+          <div class="briefly__item">
+            <dt class="briefly__title">52 Week Range</dt>
+            <dd class="briefly__content briefly__content--range briefly__content--yearly">127.13 &dash; 233.37</dd>
+          </div>
+          <div class="briefly__item">
+            <dt class="briefly__title">Market Cap</dt>
+            <dd class="briefly__content">2.04T USD</dd>
+          </div>
+          <div class="briefly__item">
+            <dt class="briefly__title">Beta</dt>
+            <dd class="briefly__content">1.25</dd>
+          </div>
+        </dl>
 
-      <section class="card__about about">
-        <h4 class="about__heading visually-hidden">About Company</h4>
-        <ul class="about__tabs">
-          <li class="about__tab about__tab--active">General</li>
-          <li class="about__tab">Profile</li>
-          <li class="about__tab">Statistics</li>
-        </ul>
-        <ul class="about__list">
-          <li class="about__item about__item--active about__item--general">
-            <p class="about__text about__text--nojs">Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. It also sells various related services. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories.
-              <span class="about__more"> The Company operates various platforms, including the App Store, which allows customers to discover and download applications and digital content, such as books, music, video, games and podcasts. Apple offers digital content through subscription-based services, including Apple Arcade, Apple Music, Apple News+, Apple TV+ and Apple Fitness+. Apple also offers a range of other services, such as AppleCare, iCloud, Apple Card and Apple Pay. Apple sells its products and resells third-party products in a range of markets, including directly to consumers, small and mid-sized businesses, and education, enterprise and government customers through its retail and online stores and its direct sales force.</span>
-            </p>
-            <button type="button" class="about__more-button">Show More</button>
-          </li>
-          <li class="about__item about__item--profile">
-            <p class="about__text">One Apple Park Way</p>
-            <p class="about__text">Cupertino CA 95014</p>
-            <p class="about__text">
-              <a href="tel:4089961010">408 996 1010</a>
-            </p>
-            <p class="about__text">
-              <a href="www.apple.com">www.apple.com</a>
-            </p>
-            <p class="about__text">Industry: Consumer Electronics</p>
-            <p class="about__text">Sector: Technology</p>
-          </li>
-          <li class="about__item about__item--stats">
+        <section class="card__about about about--nojs">
+          <h4 class="about__heading visually-hidden">About Company</h4>
+          <ul class="about__tabs">
+            <li class="about__tab about__tab--active">
+                General
+            </li>
+            <li class="about__tab">
+                Profile
+            </li>
+            <li class="about__tab">
+                Statistics
+            </li>
+          </ul>
+          <ul class="about__content">
+            <li class="about__item about__item--active about__item--general">
+              <p class="about__text about__text--nojs">Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. It also sells various related services. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories.
+                <span class="about__more"> The Company operates various platforms, including the App Store, which allows customers to discover and download applications and digital content, such as books, music, video, games and podcasts. Apple offers digital content through subscription-based services, including Apple Arcade, Apple Music, Apple News+, Apple TV+ and Apple Fitness+. Apple also offers a range of other services, such as AppleCare, iCloud, Apple Card and Apple Pay. Apple sells its products and resells third-party products in a range of markets, including directly to consumers, small and mid-sized businesses, and education, enterprise and government customers through its retail and online stores and its direct sales force.</span>
+              </p>
+              <button type="button" class="about__more-button">Show More</button>
+            </li>
+            <li class="about__item about__item--profile">
+              <p class="about__text">One Apple Park Way</p>
+              <p class="about__text">Cupertino CA 95014</p>
+              <p class="about__text">
+                <a href="tel:4089961010">408 996 1010</a>
+              </p>
+              <p class="about__text">
+                <a href="www.apple.com">www.apple.com</a>
+              </p>
+              <p class="about__text">Industry: Consumer Electronics</p>
+              <p class="about__text">Sector: Technology</p>
+            </li>
+            <li class="about__item about__item--stats">
+              <dl>
+                <div class="about__text">
+                  <dt>Market Cap (intraday)</dt>
+                  <dd>2.35T</dd>
+                </div>
+                <div class="about__text">
+                  <dt>Enterprise Value</dt>
+                  <dd>2.42T</dd>
+                </div>
+                <div class="about__text">
+                  <dt>Trailing P/E</dt>
+                  <dd>24.19</dd>
+                </div>
+                <div class="about__text">
+                  <dt>Forward P/E</dt>
+                  <dd>24.04</dd>
+                </div>
+                <div class="about__text">
+                  <dt>PEG Ratio (5 yr expected)</dt>
+                  <dd>2.86</dd>
+                </div>
+                <div class="about__text">
+                  <dt>Price/Sales (ttm)</dt>
+                  <dd>6.12</dd>
+                </div>
+                <div class="about__text">
+                  <dt>Price/Book (mrq)</dt>
+                  <dd>46.40</dd>
+                </div>
+                <div class="about__text">
+                  <dt>Enterprise Value/Revenue</dt>
+                  <dd>6.14</dd>
+                </div>
+                <div class="about__text">
+                  <dt>Enterprise Value/EBITDA</dt>
+                  <dd>18.20</dd>
+                </div>
+              </dl>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card__info info">
+          <h4 class="visually-hidden">Charts and analysis</h4>
+
+          <article class="info__block info__block--charts charts">
+            <h5 class="info__heading">Charts</h5>
+            <ul class="charts__buttons">
+              <li>
+                <button type="button" class="charts__button charts__button--active ">1M</button>
+              </li>
+              <li>
+                <button type="button" class="charts__button">3M</button>
+              </li>
+              <li>
+                <button type="button" class="charts__button">6M</button>
+              </li>
+              <li>
+                <button type="button" class="charts__button">1Y</button>
+              </li>
+              <li>
+                <button type="button" class="charts__button">3Y</button>
+              </li>
+              <li>
+                <button type="button" class="charts__button">5Y</button>
+              </li>
+              <li>
+                <button type="button" class="charts__button">10Y</button>
+              </li>
+              <li>
+                <button type="button" class="charts__button">All</button>
+              </li>
+            </ul>
+            <canvas class="charts__chart" id="price-chart" width="286" height="164"></canvas>
+          </article>
+
+          <article class="info__block info__block--recommendations recommendations">
+            <h5 class="info__heading">Analysts recommendations</h5>
+            <div class="recommendations__block">
+              <div class="recommendations__indicator">
+                <div class="recommendations__scale-wrapper">
+                  <svg class="recommendations__scale" width="163" height="165">
+                    <use xlink:href="img/sprite.svg#round-scale"></use>
+                  </svg>
+                  <svg class="recommendations__cursor" width="14" height="80">
+                    <use xlink:href="img/sprite.svg#cursor"></use>
+                  </svg>
+                  <p class="recommendations__sign">Buy</p>
+                </div>
+              </div>
+              <ul class="recommendations__legend">
+                <li class="recommendations__label recommendations__label--strong-buy">Strong Buy</li>
+                <li class="recommendations__label recommendations__label--buy">Buy</li>
+                <li class="recommendations__label recommendations__label--hold">Hold</li>
+                <li class="recommendations__label recommendations__label--sell">Sell</li>
+                <li class="recommendations__label recommendations__label--strong-sell">Strong Sell</li>
+              </ul>
+            </div>
+            <h5 class="info__heading">Number of analysts</h5>
+            <div class="recommendations__block">
+              <canvas class="recommendations__chart" id="analysts-chart" width="265" height="148"></canvas>
+            </div>
+          </article>
+
+          <article class="info__block info__block--general general">
+            <h5 class="info__heading">General information</h5>
             <dl>
-              <div class="about__text">
-                <dt>Market Cap (intraday)</dt>
-                <dd>2.35T</dd>
+              <div>
+                <dt>Type</dt>
+                <dd>Common Stock</dd>
               </div>
-              <div class="about__text">
-                <dt>Enterprise Value</dt>
-                <dd>2.42T</dd>
-              </div>
-              <div class="about__text">
-                <dt>Trailing P/E</dt>
-                <dd>24.19</dd>
-              </div>
-              <div class="about__text">
-                <dt>Forward P/E</dt>
-                <dd>24.04</dd>
-              </div>
-              <div class="about__text">
-                <dt>PEG Ratio (5 yr expected)</dt>
-                <dd>2.86</dd>
-              </div>
-              <div class="about__text">
-                <dt>Price/Sales (ttm)</dt>
-                <dd>6.12</dd>
-              </div>
-              <div class="about__text">
-                <dt>Price/Book (mrq)</dt>
-                <dd>46.40</dd>
-              </div>
-              <div class="about__text">
-                <dt>Enterprise Value/Revenue</dt>
-                <dd>6.14</dd>
-              </div>
-              <div class="about__text">
-                <dt>Enterprise Value/EBITDA</dt>
-                <dd>18.20</dd>
+              <div>
+                <dt>Exchange</dt>
+                <dd>NASDAQ</dd>
               </div>
             </dl>
-          </li>
-        </ul>
-      </section>
+          </article>
 
-      <section class="card__info info">
-        <h4 class="visually-hidden">Charts and analysis</h4>
+          <article class="info__block info__block--peers peers">
+            <h5 class="info__heading">Peers analysts</h5>
+            <table class="peers__table">
+              <tr>
+                <th>Name</th>
+                <th></th>
+                <th>Price</th>
+                <th>Daily change %</th>
+              </tr>
+              <tr class="peers__item peers__item--active peers__item--stonks">
+                <td>AAPL</td>
+                <td>Apple Inc</td>
+                <td>120.03</td>
+                <td>0.04%</td>
+              </tr>
+              <tr class="peers__item peers__item--stonks">
+                <td>CAJ</td>
+                <td>Canon Inc</td>
+                <td>120.03</td>
+                <td>0.04%</td>
+              </tr>
+              <tr class="peers__item peers__item--stonks">
+                <td>DELL</td>
+                <td>Dell Technologi...</td>
+                <td>120.03</td>
+                <td>0.04%</td>
+              </tr>
+              <tr class="peers__item peers__item--not-stonks">
+                <td>HPQ</td>
+                <td>HP Inc</td>
+                <td>120.03</td>
+                <td>0.04%</td>
+              </tr>
+              <tr class="peers__item peers__item--stonks">
+                <td>HPE</td>
+                <td>Dell Technologi...</td>
+                <td>120.03</td>
+                <td>0.04%</td>
+              </tr>
+              <tr class="peers__item peers__item--not-stonks">
+                <td>LOGI</td>
+                <td>Dell Technologi...</td>
+                <td>120.03</td>
+                <td>0.04%</td>
+              </tr>
+              <tr class="peers__item peers__item--stonks">
+                <td>STX</td>
+                <td>Apple Inc</td>
+                <td>120.03</td>
+                <td>0.04%</td>
+              </tr>
+              <tr class="peers__item peers__item--stonks">
+                <td>WDC</td>
+                <td>Canon Inc</td>
+                <td>120.03</td>
+                <td>0.04%</td>
+              </tr>
+              <tr class="peers__item peers__item--stonks">
+                <td>SNE</td>
+                <td>Dell Technologi...</td>
+                <td>120.03</td>
+                <td>0.04%</td>
+              </tr>
+              <tr class="peers__item peers__item--stonks">
+                <td>DIS</td>
+                <td>Canon Inc</td>
+                <td>120.03</td>
+                <td>0.04%</td>
+              </tr>
+            </table>
+          </article>
 
-        <article class="info__block info__block--charts charts">
-          <h5 class="info__heading">Charts</h5>
-        </article>
-
-        <article class="info__block info__block--recommendations recommendations">
-          <h5 class="info__heading">Analysts recommendations</h5>
-          <h5 class="info__heading">Number of analysts</h5>
-        </article>
-
-        <article class="info__block info__block--general general">
-          <h5 class="info__heading">General information</h5>
-          <dl>
-            <div>
-              <dt>Type</dt>
-              <dd>Common Stock</dd>
+          <article class="info__block info__block--target target">
+            <h5 class="info__heading target__heading">Price target</h5>
+            <p class="target__current-value">Current 120.20</p>
+            <div class="target__scale">
+              <svg width="284" height="20">
+                <use xlink:href="img/sprite.svg#scale"></use>
+              </svg>
+              <div class="target__current-tag"></div>
+              <p class="target__min">83.83</p>
+              <p class="target__max">H 183.75</p>
+              <p class="target__avg">Avg 154.7807058</p>
+              <p class="target__median">Median 160.140000000000</p>
             </div>
-            <div>
-              <dt>Exchange</dt>
-              <dd>NASDAQ</dd>
-            </div>
-          </dl>
-        </article>
+          </article>
+        </section>
+      </div>
 
-        <article class="info__block info__block--peers peers">
-          <h5 class="info__heading">Peers analysts</h5>
-          <table class="peers__table">
-            <tr>
-              <th>Name</th>
-              <th></th>
-              <th>Price</th>
-              <th>Daily change %</th>
-            </tr>
-            <tr class="peers__item peers__item--active peers__item--stonks">
-              <td>AAPL</td>
-              <td>Apple Inc</td>
-              <td>120.03</td>
-              <td>0.04%</td>
-            </tr>
-            <tr class="peers__item peers__item--stonks">
-              <td>CAJ</td>
-              <td>Canon Inc</td>
-              <td>120.03</td>
-              <td>0.04%</td>
-            </tr>
-            <tr class="peers__item peers__item--stonks">
-              <td>DELL</td>
-              <td>Dell Technologi...</td>
-              <td>120.03</td>
-              <td>0.04%</td>
-            </tr>
-            <tr class="peers__item peers__item--not-stonks">
-              <td>HPQ</td>
-              <td>HP Inc</td>
-              <td>120.03</td>
-              <td>0.04%</td>
-            </tr>
-            <tr class="peers__item peers__item--stonks">
-              <td>HPE</td>
-              <td>Dell Technologi...</td>
-              <td>120.03</td>
-              <td>0.04%</td>
-            </tr>
-            <tr class="peers__item peers__item--not-stonks">
-              <td>LOGI</td>
-              <td>Dell Technologi...</td>
-              <td>120.03</td>
-              <td>0.04%</td>
-            </tr>
-            <tr class="peers__item peers__item--stonks">
-              <td>STX</td>
-              <td>Apple Inc</td>
-              <td>120.03</td>
-              <td>0.04%</td>
-            </tr>
-            <tr class="peers__item peers__item--stonks">
-              <td>WDC</td>
-              <td>Canon Inc</td>
-              <td>120.03</td>
-              <td>0.04%</td>
-            </tr>
-            <tr class="peers__item peers__item--stonks">
-              <td>SNE</td>
-              <td>Dell Technologi...</td>
-              <td>120.03</td>
-              <td>0.04%</td>
-            </tr>
-            <tr class="peers__item peers__item--stonks">
-              <td>DIS</td>
-              <td>Canon Inc</td>
-              <td>120.03</td>
-              <td>0.04%</td>
-            </tr>
-          </table>
-        </article>
+      <div class="popup__card popup__item card card--placeholder">
+        <img class="card__pic" src="img/cat-1.jpeg" alt="cat-grusha">
+      </div>
 
-        <article class="info__block info__block--target target">
-          <h5 class="info__heading target__heading">Price target</h5>
-          <p class="target__current-value">Current 120.20</p>
-          <div class="target__scale">
-            <svg width="284" height="20">
-              <use xlink:href="img/sprite.svg#scale"></use>
-            </svg>
-            <div class="target__current-tag"></div>
-            <p class="target__min">83.83</p>
-            <p class="target__max">H 183.75</p>
-            <p class="target__avg">Avg 154.7807058</p>
-            <p class="target__median">Median 160.140000000000</p>
-          </div>
-        </article>
-      </section>
+      <div class="popup__card popup__item card card--placeholder">
+        <img class="card__pic" src="img/cat-2.jpeg" alt="cat-keks">
+      </div>
     </section>
   </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script type="module" src="js/main.min.js"></script>
 </body>
 </html>

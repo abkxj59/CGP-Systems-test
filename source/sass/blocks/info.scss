@@ -1,7 +1,8 @@
 .info {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 10px;
+  grid-template-rows: auto min-content min-content auto;
+  row-gap: 7px;
   column-gap: 8px;
   margin-top: 11px;
 }
@@ -13,10 +14,11 @@
 
 .info__heading {
   font-weight: 600;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   padding: 12px;
   margin: 0;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .info__block--charts {

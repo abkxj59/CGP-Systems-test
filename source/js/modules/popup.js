@@ -15,7 +15,7 @@ const closePopup = () => {
 const initPopup = () => {
   if (popup && openButton) {
     popup.classList.remove('popup--nojs');
-    // popup.classList.remove('popup--opened');
+    popup.classList.remove('popup--opened');
     openButton.addEventListener('click', openPopup);
     closeButton.addEventListener('click', closePopup);
     collapseButton.addEventListener('click', closePopup);
@@ -28,4 +28,4 @@ const initPopup = () => {
   }
 };
 
-export {initPopup};
+export {initPopup, closePopup};

@@ -1,0 +1,93 @@
+.recommendations__block {
+  display: flex;
+  padding: 0 12px 17px;
+  border-bottom: 1px solid $color-light-grey;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.recommendations__scale-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 164px;
+  height: 102px;
+  margin-top: 12px;
+  position: relative;
+}
+
+.recommendations__scale {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.recommendations__cursor {
+  position: absolute;
+  bottom: 19px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transform-origin: 50% 90%;
+}
+
+.recommendations__sign {
+  margin: 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-basic-white;
+}
+
+.recommendations__legend {
+  list-style: none;
+  padding-left: 29px;
+  margin: 5px 0;
+}
+
+.recommendations__label {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  font-size: 10px;
+  line-height: 14px;
+  color: $color-basic-white;
+  opacity: 0.5;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    content: "";
+    width: 20px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $color-light-grey;
+  }
+
+  &--strong-buy::before {
+    background-color: $color-cyan;
+  }
+
+  &--buy::before {
+    background-color: $color-cyan;
+    opacity: 0.5;
+  }
+
+  &--strong-sell::before {
+    background-color: $color-red;
+  }
+
+  &--sell::before {
+    background-color: $color-red;
+    opacity: 0.5;
+  }
+}
+
+.recommendations__chart {
+  padding-right: 4px;
+}

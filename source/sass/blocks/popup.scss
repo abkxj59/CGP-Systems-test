@@ -4,26 +4,26 @@
   border-radius: 4px;
   position: absolute;
   width: 654px;
-  top: 70px;
+  top: 0;
   left: 50%;
-  transform: translate(-50%);
-  overflow: scroll;
-  display: none;
-  transition: $trans-default;
-  overflow: visible;
+  transform: translate(-50%) scaleY(0);
+  opacity: 0;
+  transition: opacity $trans-default, transform $trans-default 1s;
 }
 
 .popup--opened {
-  display: block;
+  transition: opacity $trans-default;
+  opacity: 1;
+  transform: translate(-50%);
 }
 
 .popup__overlay {
   position: absolute;
-  top: -20%;
+  top: -20px;
   left: 50%;
   transform: translateX(-50%);
   width: 100vw;
-  height: 120%;
+  height: calc(100% + 40px);
   background-color: rgba($color: $color-black-pearl, $alpha: 0.8);
   z-index: -1;
 }
@@ -34,10 +34,6 @@
   transform: none;
 }
 
-.popup__card {
-  background-color: $color-basic-grey;
-}
-
 .popup__header {
   display: flex;
   justify-content: space-between;
@@ -45,6 +41,7 @@
 
 .popup__tabs {
   display: flex;
+  justify-self: baseline;
   list-style: none;
   padding: 7px 4px 0;
   margin: 0;
@@ -52,10 +49,12 @@
 
 .popup__tab {
   display: flex;
-  padding: 5px;
+  padding: 6px;
   margin-right: 8px;
+  height: 28px;
   position: relative;
-  transition: $trans-default;
+  transition: background-color $trans-default;
+  transition: opacity $trans-default;
   cursor: default;
 
   @include hover-focus {
@@ -81,6 +80,7 @@
 }
 
 .popup__tab--active {
+  padding: 5px;
   background-color: $color-basic-grey;
   border: 1px solid $color-light-grey;
   border-bottom: 1px solid $color-basic-grey;
@@ -88,6 +88,10 @@
 
   &::after {
     display: none;
+  }
+
+  @include hover-focus {
+    opacity: 1;
   }
 }
 
@@ -138,8 +142,18 @@
 }
 
 .popup__card {
+  background-color: $color-basic-grey;
   border: 1px solid $color-light-grey;
+  border-radius: 0 0 4px 4px;
   margin-top: -1px;
-  padding: 12px 15px 10px;
+  padding: 12px 12px 10px;
   padding-right: 11px;
+}
+
+.popup__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
 }

@@ -1,3 +1,7 @@
+.peers {
+  padding-bottom: 15px;
+}
+
 .peers__table {
   width: 100%;
   border-collapse: collapse;
@@ -18,10 +22,14 @@
     font-size: 10px;
     line-height: 15px;
     opacity: 0.5;
+
+    &:last-child {
+      width: 100px;
+    }
   }
 
   td {
-    padding: 7px 0;
+    padding: 7px 0 8px;
     font-weight: 600;
 
     &:first-child {
@@ -29,6 +37,8 @@
     }
 
     &:nth-child(2) {
+      padding-left: 5px;
+      padding-right: 5px;
       font-weight: 400;
       opacity: 0.5;
     }
