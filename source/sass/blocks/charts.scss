@@ -23,7 +23,7 @@
     opacity: 0.8;
   }
 
-  &--active  {
+  &--active {
     background-color: $color-light-grey;
     opacity: 1;
   }
@@ -31,4 +31,5 @@
 
 .charts__chart {
   padding: 0 12px;
+  max-width: 100%;
 }

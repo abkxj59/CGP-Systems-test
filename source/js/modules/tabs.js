@@ -34,6 +34,9 @@ const initTabs = (blockName) => {
               tabsCollection[0].classList.add(`${blockName}__tab--active`);
               itemsCollection[0].classList.add(`${blockName}__item--active`);
             }
+          } else {
+            tabs[i].remove();
+            items[i].remove();
           }
         });
       }

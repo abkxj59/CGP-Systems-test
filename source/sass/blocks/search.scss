@@ -7,7 +7,6 @@
 .search__input {
   padding: 5px 27px;
   background-color: $color-transparent;
-  border: none;
   color: $color-basic-white;
   border: 1px solid $color-light-grey;
   border-radius: 4px;
@@ -29,7 +28,7 @@
   top: 50%;
   transform: translateY(-50%);
   left: 8px;
-  color:$color-special-grey;
+  color: $color-special-grey;
   cursor: pointer;
   transition: $trans-default;
 
@@ -47,7 +46,7 @@
   top: 50%;
   right: 4px;
   transform: translateY(-50%);
-  color:$color-special-grey;
+  color: $color-special-grey;
   cursor: pointer;
   transition: $trans-default;
 

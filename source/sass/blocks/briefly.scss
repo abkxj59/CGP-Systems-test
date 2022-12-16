@@ -71,7 +71,7 @@
     width: 100%;
     bottom: 0;
     height: 1px;
-    background-image: url(../img/svg/range.svg);
+    background-image: url("../img/svg/range.svg");
   }
 
   &::after {
@@ -84,9 +84,11 @@
     transform: translateX(-50%);
     background-color: $color-default-white;
   }
+
   &.briefly__content--daily::after {
     left: 75%;
   }
+
   &.briefly__content--yearly::after {
     left: 24%;
   }

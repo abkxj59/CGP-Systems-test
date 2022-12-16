@@ -4,7 +4,7 @@
   border-radius: 4px;
   position: absolute;
   width: 654px;
-  top: 0;
+  top: 20px;
   left: 50%;
   transform: translate(-50%) scaleY(0);
   opacity: 0;
@@ -12,6 +12,27 @@
 
   @include vp-768 {
     width: 95%;
+  }
+}
+
+.popup--fullscreen {
+  top: 0;
+  width: 100%;
+  border-radius: 0;
+  min-height: 100vh;
+
+  .popup__overlay {
+    display: none;
+  }
+
+  .popup__content {
+    min-height: 100%;
+  }
+
+  .popup__card {
+    max-width: 1000px;
+    min-height: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -59,8 +80,7 @@
   margin-right: 8px;
   height: 28px;
   position: relative;
-  transition: background-color $trans-default;
-  transition: opacity $trans-default;
+  transition: background-color $trans-default, opacity $trans-default;
   cursor: default;
   overflow: hidden;
 
@@ -170,7 +190,7 @@
   }
 }
 
-.popup__card {
+.popup__content {
   background-color: $color-basic-grey;
   border: 1px solid $color-light-grey;
   border-radius: 0 0 4px 4px;

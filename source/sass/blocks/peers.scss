@@ -26,6 +26,7 @@
 
     &:last-child {
       width: 100px;
+      text-align: end;
     }
   }
 
@@ -49,6 +50,7 @@
   th:first-child {
     padding-left: 12px;
   }
+
   td:last-child,
   th:last-child {
     padding-right: 12px;
@@ -56,10 +58,6 @@
 
   td:last-child {
     text-align: center;
-  }
-
-  th:last-child {
-    text-align: end;
   }
 }
 
