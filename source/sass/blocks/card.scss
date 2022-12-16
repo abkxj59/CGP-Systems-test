@@ -1,6 +1,10 @@
 .card__header {
   display: flex;
   padding-left: 3px;
+
+  @include vp-768 {
+    flex-wrap: wrap;
+  }
 }
 
 .card__search {
@@ -9,6 +13,11 @@
 
 .card__price {
   margin-left: 10px;
+
+  @include vp-768 {
+    width: 100%;
+    margin: 5px 0 0;
+  }
 }
 
 .card__briefly {

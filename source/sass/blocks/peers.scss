@@ -5,6 +5,7 @@
 .peers__table {
   width: 100%;
   border-collapse: collapse;
+  position: relative;
 
   tr {
     &:first-child {
@@ -63,8 +64,6 @@
 }
 
 .peers__item {
-  position: relative;
-
   &--stonks td:last-child {
     color: $color-cyan;
   }
@@ -93,6 +92,8 @@
     }
 
     &::after {
+      position: absolute;
+      top: 30px;
       left: 4px;
       right: 4px;
       height: 31px;

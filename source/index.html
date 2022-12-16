@@ -14,9 +14,7 @@
 </head>
 <body class="page__body">
   <main class="page__main">
-    <div class="container">
-      <button type="button" class="page__button" id="open-popup">Open popup</button>
-    </div>
+    <button type="button" class="page__button" id="open-popup">Open popup</button>
   </main>
 
   <section class="page__popup popup popup--nojs popup--opened">
@@ -347,9 +345,9 @@
               <svg width="284" height="20">
                 <use xlink:href="img/sprite.svg#scale"></use>
               </svg>
-              <div class="target__current-tag"></div>
               <p class="target__min">83.83</p>
               <p class="target__max">H 183.75</p>
+              <div class="target__current-tag"></div>
               <p class="target__avg">Avg 154.7807058</p>
               <p class="target__median">Median 160.140000000000</p>
             </div>
@@ -358,11 +356,17 @@
       </div>
 
       <div class="popup__card popup__item card card--placeholder">
-        <img class="card__pic" src="img/cat-1.jpeg" alt="cat-grusha">
+        <picture>
+          <source type="image/webp" srcset="img/cat-1.webp">
+          <img class="card__pic" src="img/cat-1.jpeg" alt="cat-grusha">
+        </picture>
       </div>
 
       <div class="popup__card popup__item card card--placeholder">
-        <img class="card__pic" src="img/cat-2.jpeg" alt="cat-keks">
+        <picture>
+          <source type="image/webp" srcset="img/cat-2.webp">
+          <img class="card__pic" src="img/cat-2.jpeg" alt="cat-keks">
+        </picture>
       </div>
     </section>
   </section>

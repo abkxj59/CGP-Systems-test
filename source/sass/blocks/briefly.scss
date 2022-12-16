@@ -6,12 +6,23 @@
   border-radius: 4px;
   font-size: 10px;
   line-height: 14px;
+
+  @include vp-768 {
+    display: block;
+    padding: 0 15px;
+  }
 }
 
 .briefly__item {
   display: flex;
   align-items: center;
   position: relative;
+
+  @include vp-768 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+  }
 
   &::after {
     position: absolute;
@@ -21,6 +32,14 @@
     width: 1px;
     height: 100%;
     background-color: $color-light-grey;
+
+    @include vp-768 {
+      width: 100%;
+      height: 1%;
+      top: 100%;
+      right: 0;
+      left: 0;
+    }
   }
 
   &:last-child::after {
@@ -30,6 +49,10 @@
 
 .briefly__title {
   opacity: 0.5;
+
+  @include vp-768 {
+    text-align: end;
+  }
 }
 
 .briefly__content {

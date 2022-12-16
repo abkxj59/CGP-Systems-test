@@ -2,6 +2,7 @@
   display: flex;
   padding: 0 12px 17px;
   border-bottom: 1px solid $color-light-grey;
+  justify-content: space-around;
 
   &:last-child {
     border: none;

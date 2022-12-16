@@ -102,4 +102,14 @@
   display: flex;
   justify-content: space-between;
   width: 50%;
+
+  @include vp-768 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+
+    dt {
+      text-align: end;
+    }
+  }
 }

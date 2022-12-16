@@ -3,12 +3,8 @@
   padding: 0 40px;
   max-width: 1280px;
 
-  @include vp-1280 {
+  @include vp-840 {
     width: 100%;
     padding: 0 30px;
-  }
-
-  @include vp-768 {
-    padding: 0 16px;
   }
 }

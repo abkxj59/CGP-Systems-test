@@ -5,11 +5,19 @@
   row-gap: 7px;
   column-gap: 8px;
   margin-top: 11px;
+
+  @include vp-768 {
+    display: block;
+  }
 }
 
 .info__block {
   background-color: $color-black-pearl;
   border-radius: 4px;
+
+  @include vp-768 {
+    margin-bottom: 10px;
+  }
 }
 
 .info__heading {

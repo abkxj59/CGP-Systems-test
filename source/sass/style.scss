@@ -11,21 +11,20 @@
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-@import "global/container";
 
 // Blocks
 // ---------------------------------
 
 @import "blocks/page";
 @import "blocks/popup";
-@import "blocks/card.scss";
-@import "blocks/search.scss";
-@import "blocks/price.scss";
-@import "blocks/briefly.scss";
-@import "blocks/about.scss";
-@import "blocks/info.scss";
-@import "blocks/general.scss";
-@import "blocks/charts.scss";
-@import "blocks/recommendations.scss";
-@import "blocks/peers.scss";
-@import "blocks/target.scss";
+@import "blocks/card";
+@import "blocks/search";
+@import "blocks/price";
+@import "blocks/briefly";
+@import "blocks/about";
+@import "blocks/info";
+@import "blocks/general";
+@import "blocks/charts";
+@import "blocks/recommendations";
+@import "blocks/peers";
+@import "blocks/target";
